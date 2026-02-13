@@ -223,20 +223,6 @@ The model achieves high accuracy on standard exercises:
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how to contribute:
-
-1. **Fork the repository**
-2. **Create a feature branch**: `git checkout -b feature/YourFeature`
-3. **Commit changes**: `git commit -m 'Add YourFeature'`
-4. **Push to branch**: `git push origin feature/YourFeature`
-5. **Submit a Pull Request**
-
-Please ensure your code follows PEP 8 standards and includes appropriate documentation.
-
----
-
 ## 🙏 Acknowledgments
 
 - **Original Author**: Riccardo Riccio
