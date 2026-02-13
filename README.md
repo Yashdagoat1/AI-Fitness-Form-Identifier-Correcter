@@ -13,7 +13,6 @@ An intelligent fitness application powered by **Computer Vision** and **Deep Lea
 - **Accurate Rep Counting** - Precise repetition counting using pose estimation and deep learning
 - **Multiple Exercise Support** - Recognize various exercises including squats, push-ups, shoulder presses, and more
 - **Form Analysis** - Get insights on exercise form and posture during workouts
-- **AI Fitness Coach** - Integrated chatbot powered by OpenAI for personalized fitness guidance
 - **Multi-Mode Operation** - Video analysis, live webcam mode, and auto-classification features
 - **User-Friendly Interface** - Built with Streamlit for seamless interaction
 
@@ -95,11 +94,6 @@ Watch the Fitness AI Trainer in action:
    pip install -r requirements.txt
    ```
 
-4. **(Optional) Set up OpenAI API for chatbot:**
-   - Sign up at [OpenAI](https://platform.openai.com/signup)
-   - Create an API key from your account
-   - Add it to your environment or the application
-
 ### Usage
 
 **Run the main application:**
@@ -113,7 +107,6 @@ The application will open in your default browser at `http://localhost:8501`
 - **Video Analysis**: Upload recorded videos to analyze exercise performance
 - **Webcam Mode**: Real-time exercise tracking using your webcam
 - **Auto Classify Mode**: Automatic exercise detection and counting
-- **Fitness Coach**: Chat with the AI fitness coach for personalized advice
 
 ---
 
@@ -124,7 +117,6 @@ Fitness-AI-Trainer/
 ├── ExerciseAiTrainer.py                            # Exercise-specific pose logic
 ├── AiTrainer_utils.py                              # Utility functions
 ├── PoseModule2.py                                  # MediaPipe pose estimation
-├── chatbot.py                                      # OpenAI chatbot integration
 ├── extract_features.py                             # Feature extraction from videos
 ├── create_sequence_of_features.py                  # Dataset sequence generation
 ├── train_bidirectionallstm.py                      # Model training script
@@ -147,7 +139,6 @@ Fitness-AI-Trainer/
 | `ExerciseAiTrainer.py` | Exercise-specific logic for form analysis |
 | `extract_features.py` | Extracts landmarks and angles from video frames |
 | `train_bidirectionallstm.py` | Training script for BiLSTM classifier models |
-| `chatbot.py` | AI fitness coach powered by OpenAI API |
 
 ---
 
@@ -160,7 +151,6 @@ Fitness-AI-Trainer/
 | **MediaPipe** | Pose estimation and landmark detection |
 | **BiLSTM** | Exercise classification neural network |
 | **Streamlit** | Web application framework |
-| **OpenAI API** | Intelligent fitness chatbot |
 | **NumPy/Pandas** | Data processing and analysis |
 | **OpenCV** | Computer vision operations |
 
@@ -196,13 +186,6 @@ Repetition counting is implemented in two modes:
 1. **Manual Mode**: Users manually select the exercise, and repetitions are counted using angle-based thresholds
 2. **Automatic Mode**: A BiLSTM model classifies exercises and applies counting logic based on identified body angles. The system tracks "up" and "down" movements to ensure accurate repetition counting
 
-### Chatbot Integration
-
-- OpenAI GPT integration for fitness advice
-- Context-aware responses based on detected exercises
-- Personalized recommendations and form corrections
-- Uses LangChain's ConversationChain to maintain conversation context
-
 ---
 
 ## 📊 Performance
@@ -224,7 +207,6 @@ The model achieves high accuracy on standard exercises:
 | Webcam not detected | Check camera permissions and ensure camera is not in use by another application |
 | Streamlit not starting | Try running with: `streamlit run main.py --logger.level=debug` |
 | Low accuracy detection | Ensure good lighting and camera positioning. Model performs best with clear, front-facing views |
-| Chatbot not responding | Verify OpenAI API key is set and has sufficient credits |
 
 ---
 
@@ -267,7 +249,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Research Paper**: "Real-Time Fitness Exercise Classification and Counting from Video Frames"
 - **MediaPipe**: Google's powerful pose estimation framework
 - **Dataset**: Kaggle Real-Time Exercise Recognition Dataset
-- **OpenAI**: GPT models for the fitness chatbot
 
 ---
 

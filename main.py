@@ -3,7 +3,6 @@ import streamlit as st
 import cv2
 import tempfile
 import ExerciseAiTrainer as exercise
-from chatbot import chat_ui
 import time
 
 def main():
@@ -13,13 +12,8 @@ def main():
     # Define App Title and Structure
     st.title('Fitness AI Coach')
 
-    # 2 Options: Video, WebCam, Auto Classify, chatbot
-    options = st.sidebar.selectbox('Select Option', ('Video', 'WebCam', 'Auto Classify', 'chatbot'))
-
-    if options == 'chatbot':
-        st.markdown('-------')
-        st.markdown("The chatbot can make mistakes. Check important info.")
-        chat_ui()
+    # Options: Video, WebCam, Auto Classify
+    options = st.sidebar.selectbox('Select Option', ('Video', 'WebCam', 'Auto Classify'))
 
     # Define Operations if Video Option is selected
     if options == 'Video':
