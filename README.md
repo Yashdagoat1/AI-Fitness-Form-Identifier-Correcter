@@ -252,16 +252,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 📞 Contact & Support
-
-For questions, suggestions, or collaboration opportunities:
-
-- **Email**: riccardopersonalmail@gmail.com
-- **LinkedIn**: [Riccardo Riccio](https://www.linkedin.com/in/riccardo-riccio-bb7163296/)
-- **GitHub Issues**: [Report bugs or request features](../../issues)
-
----
-
 ## ⭐ If this project was helpful, please consider giving it a star!
 
 **Happy training! 💪**
