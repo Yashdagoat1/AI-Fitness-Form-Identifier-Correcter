@@ -237,12 +237,6 @@ Please ensure your code follows PEP 8 standards and includes appropriate documen
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 - **Original Author**: Riccardo Riccio
